@@ -1,0 +1,140 @@
+/* Geral */
+html, body {
+	margin:0;
+	padding:0;
+	height: 100%;
+	background: url('../img/corrugation.png') repeat top left;
+}
+section, article, aside, footer, header, nav, hgroup, main {
+	display:block;
+}
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-size:41px;
+	width:193px;
+	color:#8C6339;
+	line-height:1.2em;
+}
+p, li , input, textarea, button {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:1.5em;
+	color:#3b3b3b;
+}
+.clear {
+	clear:both;
+}
+.mobile {
+	display:none;
+}
+input, textarea {
+	border:1px solid #8C6339;
+	padding:5px;
+	color:#8C6339;
+	width:96%;
+}
+button {
+	border:1px solid #8C6339;
+	padding:10px;
+	color:white;
+	background:#8C6339;
+	width:100%;
+	cursor:pointer;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#8C6339;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#8C6339;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#8C6339;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#8C6339;
+}
+
+/* Header */
+header {
+	position:fixed;
+	width:20%;
+	text-align:center;
+	background:white;
+	height:100%;
+	border-right:1px solid #eee;
+}
+nav {
+	margin-top:30px;
+}
+nav > ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+nav > ul > li > a {
+	display:block;
+	padding:0;
+	color:#858585;
+	text-decoration:none;
+	width:60px;
+	margin:10px auto;
+}
+nav > ul > li > a.selected {
+	border-bottom:1px solid #8C6339;
+	color:#8C6339;
+}
+nav > ul > li > a:hover {
+	color:#3b3b3b;
+}
+nav > ul > li > a.selected:hover {
+	color:#8C6339;
+}
+/* Main */
+main {
+	float:left;
+	width:80%;
+	margin-left:20%;
+}
+main > section {
+	float:left;
+	width:60%;
+	/*background:white;*/
+	padding-top:67px;
+	margin: 0 5%;
+	text-align:justify;
+}
+main > section > h1 {
+	margin-bottom:0;
+}
+main > section > section {
+	float:left;
+	width:48%;
+}
+main > section > section#colEsq {
+	margin-right:2%;
+}
+main > section > section#colDir {
+	margin-left:2%;
+}
+main > aside {
+	position:fixed;
+	top:0;
+	right:0;
+	width:24%;
+	overflow:hidden;
+}
+/* Footer */
+footer {
+	position:absolute;
+	bottom:0;
+	height:72px;
+	margin:0 auto;
+}
+footer > p {
+	font-size:12px;
+	margin:0 60px;
+	color:#858585;
+}
